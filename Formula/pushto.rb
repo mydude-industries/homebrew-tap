@@ -4,28 +4,28 @@
 class Pushto < Formula
   desc "Deploy your projects to pushto.host from your terminal"
   homepage "https://pushto.host"
-  version "0.4.9"
+  version "0.4.10"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.4.9/pushto-0.4.9-darwin-arm64.tar.gz"
-      sha256 "2a713382101e65ec50a85956ca6058426645cd5ecd78532d7874c75d6a6ac7a2"
+      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.4.10/pushto-0.4.10-darwin-arm64.tar.gz"
+      sha256 "4f81b56339bdf95d2d0dd1ef434d6dae02dca163272a15fab8c71e5ac6c130e1"
     end
     on_intel do
-      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.4.9/pushto-0.4.9-darwin-amd64.tar.gz"
-      sha256 "5aff6cae35f5c11ab125d42cea517fe8943a22f04d1089789df94cb470438ca3"
+      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.4.10/pushto-0.4.10-darwin-amd64.tar.gz"
+      sha256 "9c04754eff0094e6df76afb7211823054aa950903c23367737963e6c6aed6f31"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.4.9/pushto-0.4.9-linux-arm64.tar.gz"
-      sha256 "cb804c5d4440d122d308bf92c0e79627646b7663a71ea425f418ceffe3d593d3"
+      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.4.10/pushto-0.4.10-linux-arm64.tar.gz"
+      sha256 "bfb242b154f8a359aeec5addcd5b69e807e0bf780ac25971dc2d87f95202c4ff"
     end
     on_intel do
-      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.4.9/pushto-0.4.9-linux-amd64.tar.gz"
-      sha256 "a00a33e130bc522eb63397120bc6f172c37432e6a72e2383c37fba0c8a355cbc"
+      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.4.10/pushto-0.4.10-linux-amd64.tar.gz"
+      sha256 "a1c3423089c2e19ce5f73c0390197cd46a87fd6a42be61b260983cd1b6b63b42"
     end
   end
 
