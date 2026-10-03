@@ -4,33 +4,35 @@
 class Pushto < Formula
   desc "Deploy your projects to pushto.host from your terminal"
   homepage "https://pushto.host"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.5.0/pushto-0.5.0-darwin-arm64.tar.gz"
-      sha256 "3f645762e169c7861a61a9513ceae24eddd1a9c38ae8fe264083672968ec176f"
+      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.5.1/pushto-0.5.1-darwin-arm64.tar.gz"
+      sha256 "2a46fbec6a6a44f6ccf2599d5443ba72e92f4b4e6d4762358534f5945c576fdd"
     end
     on_intel do
-      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.5.0/pushto-0.5.0-darwin-amd64.tar.gz"
-      sha256 "69df77f8f79ed4c9178f813db01af6e09a93f2cf8ff1c5b133bd7ea5e221384d"
+      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.5.1/pushto-0.5.1-darwin-amd64.tar.gz"
+      sha256 "459c8fd7fadd0de7653fc4645e20bb5ee51bfd5efa0343261c89b00bc8cbd657"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.5.0/pushto-0.5.0-linux-arm64.tar.gz"
-      sha256 "99d4a334c0fdb58fedc117712412324d1b170baa7685fe0bc6322529f5ee0b30"
+      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.5.1/pushto-0.5.1-linux-arm64.tar.gz"
+      sha256 "675668c35704d94e7770ee041a5b9d21adf1b976259d45b721474581eacb33f3"
     end
     on_intel do
-      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.5.0/pushto-0.5.0-linux-amd64.tar.gz"
-      sha256 "b5115f3ab335a64bac1854fedb2918abaf32709d1ddc77a300e4870633930b99"
+      url "https://github.com/mydude-industries/homebrew-tap/releases/download/v0.5.1/pushto-0.5.1-linux-amd64.tar.gz"
+      sha256 "04a03a2b8f0c0c5c5aac764c9a5f5d50ab4ce379a07c04437d20478216552e6c"
     end
   end
 
   def install
     bin.install "pushto"
+    pkgshare.install "THIRD_PARTY_NOTICES.txt"
+    pkgshare.install "LICENSE"
   end
 
   test do
